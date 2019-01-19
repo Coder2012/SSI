@@ -24,24 +24,24 @@ const IndexPage = () => (
       <h1>SSI International</h1>
       <p>Worldwide Security Solutions</p>
     </section>
-    <section>
-      <section>
+    <section className={LayoutStyles.items}>
+      <section className={LayoutStyles.item}>
         <SSISecurityImage />
-        <div className={LayoutStyles.item}>
+        <div className={LayoutStyles.content}>
           <h2>Security</h2>
           <p>International Security &amp; Risk Management Services</p>
         </div>
       </section>
-      <section>
+      <section className={LayoutStyles.item}>
         <SSIConstructionImage />
-        <div className={LayoutStyles.item}>
+        <div className={LayoutStyles.content}>
           <h2>Construction</h2>
           <p>Engineering, Procurement &amp; Construction</p>
         </div>
       </section>
-      <section>
+      <section className={LayoutStyles.item}>
         <SSIMarineImage />
-        <div className={LayoutStyles.item}>
+        <div className={LayoutStyles.content}>
           <h2>Marine</h2>
           <p>Onshore &amp; Offshore Support</p>
         </div>

@@ -4,7 +4,7 @@ import HeaderStyles from './header.module.scss'
 
 const Header = ({ siteTitle }) => (
   <header className={HeaderStyles.topBar}>
-    <p>Call: <a href="tel:0333 33 55 774">0333 33 55 774</a></p>
+    <p>Call: <a href="tel:+44 333 33 55 774">+44 (0) 333 33 55 774</a></p>
   </header>
 )
 
