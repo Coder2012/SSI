@@ -23,6 +23,7 @@ const IndexPage = () => (
     <section className={LayoutStyles.title}>
       <h1>SSI International</h1>
       <p>Worldwide Security Solutions</p>
+      <a href="mailto:info@s-s-int.com">info@s-s-int.com</a>
     </section>
     <section className={LayoutStyles.items}>
       <section className={LayoutStyles.item}>
