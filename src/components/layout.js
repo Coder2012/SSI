@@ -25,7 +25,7 @@ const Layout = ({ children }) => (
           style={{
             flexGrow: 1,
             margin: `0 auto`,
-            maxWidth: 960,
+            maxWidth: 1200,
             padding: `80px 1.0875rem 1.45rem`,
             paddingTop: 0,
           }}

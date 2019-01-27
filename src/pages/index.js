@@ -27,11 +27,13 @@ const IndexPage = () => (
     </section>
     <section className={LayoutStyles.items}>
       <section className={LayoutStyles.item}>
-        <SSISecurityImage />
-        <div className={LayoutStyles.content}>
-          <h2>Security</h2>
-          <p>International Security &amp; Risk Management Services</p>
-        </div>
+        <Link className={LayoutStyles.link} to="security">
+          <SSISecurityImage />
+          <div className={LayoutStyles.content}>
+            <h2>Security</h2>
+            <p>International Security &amp; Risk Management Services</p>
+          </div>
+        </Link>
       </section>
       <section className={LayoutStyles.item}>
         <SSIConstructionImage />
@@ -48,7 +50,6 @@ const IndexPage = () => (
         </div>
       </section>
     </section>
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
 )
 

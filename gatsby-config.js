@@ -1,8 +1,8 @@
 module.exports = {
   pathPrefix: "/SSI",
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `SSI Worldwide Security Solutions`,
+    description: `Marine, Construction & Security Unique Solutions`,
     author: `@gatsbyjs`,
   },
   plugins: [
