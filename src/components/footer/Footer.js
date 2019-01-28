@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={FooterStyles.footer}>
       <h3>Contact</h3>
-      <dl class={FooterStyles.contact}>
+      <dl className={FooterStyles.contact}>
         <dt>General business:</dt>
         <dd>
           <a href="mailto:info@s-s-int.com">info@s-s-int.com</a>

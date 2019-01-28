@@ -4,11 +4,13 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import LayoutStyles from '../styles/layout.module.scss'
 import SEO from '../components/seo'
-import CityscapeImage from '../components/cityscape-image'
-import MarineImage from '../components/marine-image'
-import TrainingImage from '../components/training-image'
+import Img from 'gatsby-image'
 
-const Security = () => (
+const getImageByName = (data, name) => {
+  return data.ProjectImgs.edges.find(n => n.node.name === name)
+}
+
+const Security = ({ data }) => (
   <Layout>
     <SEO title="SSI Security" />
     <section className={LayoutStyles.title}>
@@ -16,8 +18,10 @@ const Security = () => (
       <p>Worldwide Security Solutions</p>
       <a href="mailto:info@s-s-int.com">info@s-s-int.com</a>
     </section>
-    <CityscapeImage />
+    {/* <CityscapeImage /> */}
+    <Img fluid={getImageByName(data, 'cityscape-image').node.childImageSharp.fluid} />
     <section className={LayoutStyles.section}>
+    {console.log('data2', data)}
       <h2>Aim</h2>
       <p>
         Our goal is to bring expertise from, Logistics, Marine support, Offshore
@@ -48,7 +52,7 @@ const Security = () => (
         <li>Marine Services</li>
       </ul>
     </section>
-    <MarineImage />
+    <Img fluid={getImageByName(data, 'marine-1').node.childImageSharp.fluid} />
     <section className={LayoutStyles.section}>
       <p>
         SSI are in a position to deliver training in all of the below courses
@@ -96,7 +100,7 @@ const Security = () => (
         </li>
       </ul>
     </section>
-    <TrainingImage />
+    <Img fluid={getImageByName(data, 'training-image').node.childImageSharp.fluid} />
     <section className={LayoutStyles.section}>
       <p>
         SSI offers its clients a unique and professional service, based upon the
@@ -116,5 +120,26 @@ const Security = () => (
     <Link to="/">Back to home</Link>
   </Layout>
 )
+
+export const query = graphql`
+  query allImgsQuery {
+    ProjectImgs: allFile(
+      sort: { order: ASC, fields: [absolutePath] }
+      filter: { relativePath: { regex: "/(png|jpg)/" } }
+    ) {
+      edges {
+        node {
+          relativePath
+          name
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default Security

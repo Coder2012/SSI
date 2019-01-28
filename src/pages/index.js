@@ -8,7 +8,7 @@ import SSIMarineImage from '../components/ssimarine'
 import SEO from '../components/seo'
 import LayoutStyles from '../styles/layout.module.scss'
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO
       title="Home"
@@ -21,7 +21,7 @@ const IndexPage = () => (
       ]}
     />
     <section className={LayoutStyles.title}>
-      <h1>SSI International</h1>
+      <h1>SSI InternationalX</h1>
       <p>Worldwide Security Solutions</p>
       <a href="mailto:info@s-s-int.com">info@s-s-int.com</a>
     </section>
