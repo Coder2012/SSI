@@ -18,10 +18,8 @@ const Security = ({ data }) => (
       <p>Worldwide Security Solutions</p>
       <a href="mailto:info@s-s-int.com">info@s-s-int.com</a>
     </section>
-    {/* <CityscapeImage /> */}
     <Img fluid={getImageByName(data, 'cityscape-image').node.childImageSharp.fluid} />
     <section className={LayoutStyles.section}>
-    {console.log('data2', data)}
       <h2>Aim</h2>
       <p>
         Our goal is to bring expertise from, Logistics, Marine support, Offshore
@@ -31,7 +29,7 @@ const Security = ({ data }) => (
       </p>
       <h2>Services</h2>
       <p>
-        SSIcombines strategic acumen with the all-embracing industry insight to
+        SSI combines strategic acumen with the all-embracing industry insight to
         help clients augment business performance and gain market share via our
         service offerings –business unit strategy, corporate strategy,
         organizational strategy and shareholder value management.
@@ -122,7 +120,7 @@ const Security = ({ data }) => (
 )
 
 export const query = graphql`
-  query allImgsQuery {
+  query securityImgsQuery {
     ProjectImgs: allFile(
       sort: { order: ASC, fields: [absolutePath] }
       filter: { relativePath: { regex: "/(png|jpg)/" } }
