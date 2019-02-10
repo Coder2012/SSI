@@ -21,6 +21,7 @@ const Layout = ({ children }) => (
     render={data => (
       <section className={LayoutStyles.wrapper}>
         <Header siteTitle={data.site.siteMetadata.title} />
+
         <div
           style={{
             flexGrow: 1,

@@ -43,11 +43,13 @@ const IndexPage = ({ data }) => (
         </div>
       </section>
       <section className={LayoutStyles.item}>
-        <SSIMarineImage />
-        <div className={LayoutStyles.content}>
-          <h2>Marine</h2>
-          <p>Onshore &amp; Offshore Support</p>
-        </div>
+        <Link className={LayoutStyles.link} to="marine">
+          <SSIMarineImage />
+          <div className={LayoutStyles.content}>
+            <h2>Marine</h2>
+            <p>Onshore &amp; Offshore Support</p>
+          </div>
+        </Link>
       </section>
     </section>
   </Layout>

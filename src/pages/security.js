@@ -18,8 +18,19 @@ const Security = ({ data }) => (
       <p>Worldwide Security Solutions</p>
       <a href="mailto:info@s-s-int.com">info@s-s-int.com</a>
     </section>
-    <Img fluid={getImageByName(data, 'cityscape-image').node.childImageSharp.fluid} />
+    <Img
+      fluid={getImageByName(data, 'cityscape-image').node.childImageSharp.fluid}
+    />
     <section className={LayoutStyles.section}>
+      <ul>
+        <li>
+          Executive Protection – Residential &amp; Mobile security solutions
+        </li>
+        <li>Asset Protection - High value goods or property</li>
+        <li>Surveillance / Counter Surveillance</li>
+        <li>Investigative Services</li>
+        <li>Kidnap Protection</li>
+      </ul>
       <h2>Aim</h2>
       <p>
         Our goal is to bring expertise from, Logistics, Marine support, Offshore
@@ -50,69 +61,49 @@ const Security = ({ data }) => (
         <li>Marine Services</li>
       </ul>
     </section>
-    <Img fluid={getImageByName(data, 'marine-1').node.childImageSharp.fluid} />
     <section className={LayoutStyles.section}>
+      <h2>Physical Security</h2>
+      <h3>Protective Services</h3>
       <p>
-        SSI are in a position to deliver training in all of the below courses
-        and certificate them through three awarding bodies, City &amp; Guilds,
-        Highfields and AoFA
+        SSI Ltd has been providing bespoke security solutions throughout UK,
+        Europe, Caribbean &amp; the Middle East including Iraq and Dubai since
+        2016. SSI has provided a varied range of protection services from 1 to 1
+        Close protection for high value principles and families through to High
+        Profile Armed Mobile Security, SSI’s skilled professionals who are manly
+        comprised of former Military including special forces personal from
+        numerus countries across the globe.
       </p>
+      <h3>Mobile Security</h3>
+      <p>
+        SSI believes in a non-confrontational approach to mobile security.
+        Experience has shown that close engagement and friendly interaction with
+        the local populous and security services is significantly more effective
+        than confrontation or failure to engage.
+      </p>
+      <h3>Event Security</h3>
+      <p>
+        SSI can supply Event security, covering Close protection, crowd stewards
+        and consultancy services covering risk management to a very large range
+        of festivals and events across UK &amp; Europe
+      </p>
+    </section>
+    <section className={LayoutStyles.section}>
+      <h2>Travel Security</h2>
       <ul>
-        <li>Highfields and AoFALevel 2 Award in Conflict Management (RQF)</li>
-        <li>Level 1 International Award in Fire Safety</li>
-        <li>Level 2 International Award in Fire Safety</li>
-        <li>
-          Level 2 International Award in Basic Life Support and the Safe Use of
-          an AutomatedExternal Defibrillator
-        </li>
-        <li>Level 2 International Award in Emergency First Aid at Work</li>
-        <li>
-          Level 2 International Award in Emergency First Aid, Defibrillation and
-          CPR
-        </li>
-        <li>
-          Level 2 International Award in PaediatricFirst Aid and the Safe Use of
-          an AutomatedExternal Defibrillator
-        </li>
-        <li>
-          Level 2 International Award in PaediatricFirst Aid, the Safe Use of an
-          Automated ExternalDefibrillator and Managing Illness and Injury
-        </li>
-        <li>
-          Level 3 International Award in First Aid at Work and the Safe Use of
-          an AutomatedExternal Defibrillator International Award in Basic Life
-          Support
-        </li>
-        <li>Level 1 International Award in Principles of Health and Safety</li>
-        <li>Level 2 International Award in Work at Height</li>
-        <li>Level 1 International Award in Safe Moving and Handling</li>
-        <li>
-          Level 2 International Award in CCTV Operations (Public Space
-          Surveillance)
-        </li>
-        <li>Level 2 International Award in Security Guarding</li>
-        <li>
-          Level 3 International Certificate in Close Protection F-POS-I Advanced
-          First Aid RoSPAAdvanced driving Instruction In house Drug and Alcohol
-          testing
-        </li>
+        <li>SSI International global security portal &amp; mobile access applications (iOS and Android)</li>
+        <li>Global travel security notifications</li>
+        <li>Full access to SSI International Command &amp; Control Centre analysts</li>
+        <li>GPS tracking &amp; proactive monitoring of all employees</li>
+        <li>24/7 security and medical hotline support</li>
       </ul>
     </section>
-    <Img fluid={getImageByName(data, 'training-image').node.childImageSharp.fluid} />
     <section className={LayoutStyles.section}>
-      <p>
-        SSI offers its clients a unique and professional service, based upon the
-        highest standards of response and support that is unrivalled in its
-        field.
-      </p>
-      <ul>
-        <li>Compartment Fire Behaviour Training</li>
-        <li>Searching in smoked environment</li>
-        <li>Flashover Instructors course</li>
-        <li>Confined space training</li>
-        <li>Breathing Apparatus training</li>
-        <li>Gas detection training</li>
-        <li>Working at heights, rigging and scaffolding</li>
+      <h2>Crisis Management</h2>
+      <ul> 
+        <li>Mobile security protection &amp; close protection services world wide</li>
+        <li>In-country Emergency evacuations</li>
+        <li>Ransom and Kidnap for and extortion support</li>
+        <li>On-site &amp; on line Hostile Environment Awareness Training (HEAT)</li>
       </ul>
     </section>
     <Link to="/">Back to home</Link>
@@ -138,6 +129,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
 export default Security
