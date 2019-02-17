@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => (
       ]}
     />
     <section className={LayoutStyles.title}>
-      <h1>SSI InternationalX</h1>
+      <h1>SSI International</h1>
       <p>Worldwide Security Solutions</p>
       <a href="mailto:info@s-s-int.com">info@s-s-int.com</a>
     </section>

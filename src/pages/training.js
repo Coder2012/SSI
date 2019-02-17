@@ -18,6 +18,7 @@ const Training = ({ data }) => (
       <p>Worldwide Security Solutions</p>
       <a href="mailto:info@s-s-int.com">info@s-s-int.com</a>
     </section>
+    <Img fluid={getImageByName(data, 'training-image-2').node.childImageSharp.fluid} />
     <section className={LayoutStyles.section}>
       <p>
         SSI are in a position to deliver training in all of the below courses

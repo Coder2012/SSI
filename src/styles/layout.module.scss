@@ -4,6 +4,12 @@
     min-height: 100vh;
 }
 
+.hide-small {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
 .section {
   margin: 50px 0;
 }

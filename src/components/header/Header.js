@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import HeaderStyles from './header.module.scss'
+import LayoutStyles from '../../styles/layout.module.scss'
 import Navigation from '../navigation/Navigation'
 
 class Header extends Component {
@@ -9,7 +10,6 @@ class Header extends Component {
     this.state = { active: false }
   }
   handleMenuClick = () => {
-    console.log('click')
     this.setState(prevState => {
       return { active: !prevState.active }
     })
@@ -25,7 +25,7 @@ class Header extends Component {
             Menu
           </button>
           <p>
-            Call: <a href="tel:+44 333 33 55 774">+44 (0) 333 33 55 774</a>
+            <span className={LayoutStyles.hideSmall}>Call: </span><a href="tel:+44 333 33 55 774">+44 (0) 333 33 55 774</a>
           </p>
         </header>
         <Navigation {...this.state} />
