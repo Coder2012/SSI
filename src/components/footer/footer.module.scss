@@ -7,7 +7,12 @@ footer {
   position: relative;
 
   .contact {
-    max-width: 320px;
+    max-width: 400px;
+  }
+
+  .address {
+    display: inline-block;
+    margin: 0 30px 30px 0;
   }
 
   h3 {
