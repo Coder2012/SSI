@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import LayoutStyles from '../styles/layout.module.scss'
 import SEO from '../components/seo'
 import Img from 'gatsby-image'
+import Title from '../components/title/Title';
 
 const getImageByName = (data, name) => {
   return data.ProjectImgs.edges.find(n => n.node.name === name)
@@ -13,11 +14,7 @@ const getImageByName = (data, name) => {
 const Security = ({ data }) => (
   <Layout>
     <SEO title="SSI Security" />
-    <section className={LayoutStyles.title}>
-      <h1>SSI International</h1>
-      <p>Worldwide Security Solutions</p>
-      <a href="mailto:info@s-s-int.com">info@s-s-int.com</a>
-    </section>
+    <Title style={LayoutStyles.title} />
     <Img
       fluid={getImageByName(data, 'cityscape-image').node.childImageSharp.fluid}
     />

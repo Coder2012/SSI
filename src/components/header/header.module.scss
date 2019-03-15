@@ -29,6 +29,11 @@
             }
         }
     }
+
+    @media screen and (min-width: 1199px) {
+        justify-content: space-between;
+        padding: 0 60px;
+    }
 }
 
 .menu {

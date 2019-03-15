@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import LayoutStyles from '../styles/layout.module.scss'
+import Title from '../components/title/Title'
 import SEO from '../components/seo'
 import Img from 'gatsby-image'
 
@@ -13,11 +14,7 @@ const getImageByName = (data, name) => {
 const Training = ({ data }) => (
   <Layout>
     <SEO title="SSI Security" />
-    <section className={LayoutStyles.title}>
-      <h1>SSI International</h1>
-      <p>Worldwide Security Solutions</p>
-      <a href="mailto:info@s-s-int.com">info@s-s-int.com</a>
-    </section>
+    <Title style={LayoutStyles.title} />
     <Img fluid={getImageByName(data, 'training-image-2').node.childImageSharp.fluid} />
     <section className={LayoutStyles.section}>
       <p>

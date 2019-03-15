@@ -7,7 +7,7 @@ import './layout.css'
 import Footer from './footer/footer'
 import LayoutStyles from '../styles/layout.module.scss'
 
-const Layout = ({ children }) => (
+const Layout = ({ background, children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -21,18 +21,19 @@ const Layout = ({ children }) => (
     render={data => (
       <section className={LayoutStyles.wrapper}>
         <Header siteTitle={data.site.siteMetadata.title} />
-
-        <div
-          style={{
-            flexGrow: 1,
-            margin: `0 auto`,
-            maxWidth: 1200,
-            padding: `80px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
-          {children}
-        </div>
+        <section className={background && LayoutStyles.background}>
+          <div
+            style={{
+              flexGrow: 1,
+              margin: `0 auto`,
+              maxWidth: 1200,
+              padding: `80px 1.0875rem 1.45rem`,
+              paddingTop: 0,
+            }}
+          >
+            {children}
+          </div>
+        </section>
         <Footer />
       </section>
     )}

@@ -9,21 +9,19 @@ const Navigation = props => {
     <nav className={[NavigationStyles.panel, open].join(' ')}>
       <ul>
         <li>
-        <Link to="/">Home</Link>
+        <Link to="/" activeStyle={{ color: "red" }} >Home</Link>
         </li>
         <li>
-          <Link to="security">Security</Link>
-          <ul>
-            <li>
-              <Link to="training">Training</Link>
-            </li>
-          </ul>
+          <Link to="security" activeStyle={{ color: "red" }} >Security</Link>
         </li>
         <li>
-          <Link to="/">Construction</Link>
+          <Link to="training" activeStyle={{ color: "red" }} >Training</Link>
         </li>
         <li>
-          <Link to="marine">Marine</Link>
+          <Link to="/" >Construction</Link>
+        </li>
+        <li>
+          <Link to="marine" activeStyle={{ color: "red" }} >Marine</Link>
         </li>
       </ul>
     </nav>
