@@ -1,5 +1,6 @@
 import React from 'react'
 import FooterStyles from './footer.module.scss'
+import HouseholdDivisionLogo from '../householdDivisionLogo'
 
 const Footer = () => {
   return (
@@ -40,6 +41,7 @@ const Footer = () => {
         </dd>
       </dl>
       <p className={FooterStyles.copyright}>Copyright &copy; SSI 2018</p>
+      <HouseholdDivisionLogo />
     </footer>
   )
 }

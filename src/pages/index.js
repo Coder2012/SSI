@@ -14,15 +14,17 @@ const IndexPage = ({ data }) => (
       title="Home"
       keywords={[
         `ssi`,
+        'SSI Global Security Solutions',
         `ssi-international`,
         `ssi-security`,
         `ssi-construction`,
         `ssi-marine`,
       ]}
     />
+
     <section className={LayoutStyles.title}>
       <h1>SSI Global Solutions</h1>
-      <p></p>
+      <p />
       <a href="mailto:info@s-s-int.com">info@s-s-int.com</a>
     </section>
     <section className={LayoutStyles.items}>

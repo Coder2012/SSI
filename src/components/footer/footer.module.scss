@@ -6,6 +6,12 @@ footer {
   padding: 20px;
   position: relative;
 
+  .logo {
+    position: absolute !important;
+    top: 20px;
+    right: 20px;
+  }
+
   .contact {
     max-width: 400px;
   }

@@ -74,6 +74,12 @@ const Security = ({ data }) => (
         numerus countries across the globe.
       </p>
       <h3>Mobile Security</h3>
+      <Img
+        className={LayoutStyles.section}
+        fluid={
+          getImageByName(data, 'mobile-security').node.childImageSharp.fluid
+        }
+      />
       <p>
         SSI believes in a non-confrontational approach to mobile security.
         Experience has shown that close engagement and friendly interaction with
@@ -81,6 +87,12 @@ const Security = ({ data }) => (
         than confrontation or failure to engage.
       </p>
       <h3>Event Security</h3>
+      <Img
+        className={LayoutStyles.section}
+        fluid={
+          getImageByName(data, 'event-security').node.childImageSharp.fluid
+        }
+      />
       <p>
         SSI can supply Event security, covering Close protection, crowd stewards
         and consultancy services covering risk management to a very large range
@@ -89,21 +101,36 @@ const Security = ({ data }) => (
     </section>
     <section className={LayoutStyles.section}>
       <h2>Travel Security</h2>
+      <Img
+        className={LayoutStyles.section}
+        fluid={
+          getImageByName(data, 'personal-security').node.childImageSharp.fluid
+        }
+      />
       <ul>
-        <li>SSI International global security portal &amp; mobile access applications (iOS and Android)</li>
+        <li>
+          SSI International global security portal &amp; mobile access
+          applications (iOS and Android)
+        </li>
         <li>Global travel security notifications</li>
-        <li>Full access to SSI International Command &amp; Control Centre analysts</li>
+        <li>
+          Full access to SSI International Command &amp; Control Centre analysts
+        </li>
         <li>GPS tracking &amp; proactive monitoring of all employees</li>
         <li>24/7 security and medical hotline support</li>
       </ul>
     </section>
     <section className={LayoutStyles.section}>
       <h2>Crisis Management</h2>
-      <ul> 
-        <li>Mobile security protection &amp; close protection services world wide</li>
+      <ul>
+        <li>
+          Mobile security protection &amp; close protection services world wide
+        </li>
         <li>In-country Emergency evacuations</li>
         <li>Ransom and Kidnap for and extortion support</li>
-        <li>On-site &amp; on line Hostile Environment Awareness Training (HEAT)</li>
+        <li>
+          On-site &amp; on line Hostile Environment Awareness Training (HEAT)
+        </li>
       </ul>
     </section>
     <Link to="/">Back to home</Link>
