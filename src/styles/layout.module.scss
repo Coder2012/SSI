@@ -1,3 +1,17 @@
+.background {
+  &::before {
+    content: '';
+    background: url('../images/manhattan-background.jpg'); //#832839
+    display: block;
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -6,6 +20,12 @@
 
 .hide-small {
   @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
+.hide-desktop {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -55,11 +75,12 @@ ul li {
 }
 
 .content {
-  background: #c0b283;
+  background: rgba(0,0,0,0.3);
   border-radius: 5px;
   margin: 20px 0 80px;
   min-height: 140px;
   padding: 15px;
+  color: white;
 
   h2 {
     display: inline-block;

@@ -7,6 +7,7 @@ footer {
   position: relative;
 
   .contact {
+    display: inline-block;
     max-width: 400px;
   }
 
@@ -41,7 +42,7 @@ footer {
   dd {
     display: inline-block;
     margin-right: 10px;
-    margin-bottom: 10px;;
+    margin-bottom: 5px;;
   }
 
   dt {

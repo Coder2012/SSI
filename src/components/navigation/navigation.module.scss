@@ -1,36 +1,55 @@
 .panel {
-    background-color: #373737; 
-    padding-top: 80px;
-    width: 90%;
-    height: 100vh;
-    transform: translateX(-100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    transition: .4s ease-in-out;
+  background-color: #373737;
+  padding-top: 80px;
+  width: 90%;
+  height: 100vh;
+  transform: translateX(-100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.4s ease-in-out;
 
-    &-active {
-        transform: translateX(0);
+  &-active {
+    transform: translateX(0);
+  }
+
+  ul,
+  ol {
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 16px;
+
+    li {
+      padding: 5px 0;
     }
+  }
 
-    ul, ol {
-        color: white;
-        list-style-type: none;
-        margin: 0;
-        padding-left: 16px;
-
-        li {
-            padding: 5px 0;
-        }
+  a {
+    color: white;
+    text-decoration: none;
+    &:visited,
+    &:focus {
+      color: white;
     }
+  }
 
-    a {
-        color: white;
-        text-decoration: none;
-        &:visited,
-        &:focus {
-            color: white;
-        }
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding-top: 0;
+    transform: none;
+    transition: none;
+
+    ul {
+      display: flex;
+      padding: 0;
+
+      li {
+        padding-right: 16px;
+      }
     }
+  }
 }

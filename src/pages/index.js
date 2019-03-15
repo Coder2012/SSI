@@ -5,11 +5,12 @@ import Layout from '../components/layout'
 import SSISecurityImage from '../components/ssisecurity'
 import SSIConstructionImage from '../components/ssiconstruction'
 import SSIMarineImage from '../components/ssimarine'
+import Title from '../components/title/Title'
 import SEO from '../components/seo'
 import LayoutStyles from '../styles/layout.module.scss'
 
 const IndexPage = ({ data }) => (
-  <Layout>
+  <Layout background={true}>
     <SEO
       title="Home"
       keywords={[
@@ -20,11 +21,7 @@ const IndexPage = ({ data }) => (
         `ssi-marine`,
       ]}
     />
-    <section className={LayoutStyles.title}>
-      <h1>SSI Global Solutions</h1>
-      <p></p>
-      <a href="mailto:info@s-s-int.com">info@s-s-int.com</a>
-    </section>
+    <Title style={LayoutStyles.title} />
     <section className={LayoutStyles.items}>
       <section className={LayoutStyles.item}>
         <Link className={LayoutStyles.link} to="security">

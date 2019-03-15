@@ -20,15 +20,16 @@ class Header extends Component {
         <header className={HeaderStyles.topBar}>
           <button
             onClick={() => this.handleMenuClick()}
-            className={HeaderStyles.menu}
+            className={[HeaderStyles.menu, LayoutStyles.hideDesktop].join(' ')}
           >
             Menu
           </button>
+          <Navigation {...this.state} />
           <p>
-            <span className={LayoutStyles.hideSmall}>Call: </span><a href="tel:+44 333 33 55 774">+44 (0) 333 33 55 774</a>
+            <span className={LayoutStyles.hideSmall}>Call: </span>
+            <a href="tel:+44 333 33 55 774">+44 (0) 333 33 55 774</a>
           </p>
         </header>
-        <Navigation {...this.state} />
       </React.Fragment>
     )
   }
