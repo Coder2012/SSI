@@ -18,7 +18,7 @@ const Navigation = props => {
           <Link to="training" activeStyle={{ color: "red" }} >Training</Link>
         </li>
         <li>
-          <Link to="/" >Construction</Link>
+          <Link to="construction" activeStyle={{ color: "red" }} >Construction</Link>
         </li>
         <li>
           <Link to="marine" activeStyle={{ color: "red" }} >Marine</Link>

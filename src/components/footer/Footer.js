@@ -39,6 +39,10 @@ const Footer = () => {
         <dd>
           <a href="mailto:marine.services@s-s-int.com">Marine.services@s-s-int.com</a>
         </dd>
+        <dt>Logistics Support:</dt>
+        <dd>
+          <a href="mailto:logistics@s-s-int.com">logistics@s-s-int.com</a>
+        </dd>
       </dl>
       <p className={FooterStyles.copyright}>Copyright &copy; SSI 2018</p>
       <HouseholdDivisionLogo />

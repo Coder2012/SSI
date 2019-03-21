@@ -30,6 +30,22 @@
   }
 }
 
+h2 {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    content: '';
+    background-color: red;
+    display: inline-block;
+    width: 60px;
+    height: 4px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+}
+
 .section {
   margin: 50px 0;
 }
@@ -82,21 +98,7 @@ ul li {
   padding: 15px;
   color: white;
 
-  h2 {
-    display: inline-block;
-    position: relative;
-
-    &::after {
-      content: '';
-      background-color: red;
-      display: inline-block;
-      width: 60px;
-      height: 4px;
-      position: absolute;
-      bottom: -10px;
-      left: 0;
-    }
-  }
+  
 
   p {
     font-family: Arial;

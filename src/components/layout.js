@@ -21,10 +21,9 @@ const Layout = ({ background, children }) => (
     render={data => (
       <section className={LayoutStyles.wrapper}>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <section className={background && LayoutStyles.background}>
+        <section style={{ flexGrow: 1 }} className={background && LayoutStyles.background}>
           <div
             style={{
-              flexGrow: 1,
               margin: `0 auto`,
               maxWidth: 1200,
               padding: `80px 1.0875rem 1.45rem`,

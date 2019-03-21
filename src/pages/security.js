@@ -60,7 +60,12 @@ const Security = ({ data }) => (
     </section>
     <section className={LayoutStyles.section}>
       <h2>Physical Security</h2>
-      <h3>Protective Services</h3>
+      <Img
+        className={LayoutStyles.section}
+        fluid={
+          getImageByName(data, 'personal-security').node.childImageSharp.fluid
+        }
+      />
       <p>
         SSI Ltd has been providing bespoke security solutions throughout UK,
         Europe, Caribbean &amp; the Middle East including Iraq and Dubai since
@@ -74,7 +79,7 @@ const Security = ({ data }) => (
       <Img
         className={LayoutStyles.section}
         fluid={
-          getImageByName(data, 'mobile-security').node.childImageSharp.fluid
+          getImageByName(data, 'mobile-security-2').node.childImageSharp.fluid
         }
       />
       <p>
@@ -101,7 +106,7 @@ const Security = ({ data }) => (
       <Img
         className={LayoutStyles.section}
         fluid={
-          getImageByName(data, 'personal-security').node.childImageSharp.fluid
+          getImageByName(data, 'crisis-app').node.childImageSharp.fluid
         }
       />
       <ul>
@@ -119,6 +124,12 @@ const Security = ({ data }) => (
     </section>
     <section className={LayoutStyles.section}>
       <h2>Crisis Management</h2>
+      <Img
+        className={LayoutStyles.section}
+        fluid={
+          getImageByName(data, 'crisis-management').node.childImageSharp.fluid
+        }
+      />
       <ul>
         <li>
           Mobile security protection &amp; close protection services world wide

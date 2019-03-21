@@ -34,11 +34,13 @@ const IndexPage = ({ data }) => (
         </Link>
       </section>
       <section className={LayoutStyles.item}>
-        <SSIConstructionImage />
-        <div className={LayoutStyles.content}>
-          <h2>Construction</h2>
-          <p>Engineering, Procurement &amp; Construction</p>
-        </div>
+        <Link className={LayoutStyles.link} to="construction">
+          <SSIConstructionImage />
+          <div className={LayoutStyles.content}>
+            <h2>Construction</h2>
+            <p>Property management, Developments &amp; Building Work</p>
+          </div>
+        </Link>
       </section>
       <section className={LayoutStyles.item}>
         <Link className={LayoutStyles.link} to="marine">
