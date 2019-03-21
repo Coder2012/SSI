@@ -46,6 +46,21 @@ h2 {
   }
 }
 
+.fixed-logo {
+  width: 240px;
+  height: 140px;
+}
+
+@media screen and (min-width: 1024px) {
+  .fixed-logo {
+    position: absolute !important;
+    top: 0;
+    right: 20px;
+    width: 240px;
+    height: 140px;
+  }
+}
+
 .section {
   margin: 50px 0;
 }
@@ -97,8 +112,6 @@ ul li {
   min-height: 140px;
   padding: 15px;
   color: white;
-
-  
 
   p {
     font-family: Arial;

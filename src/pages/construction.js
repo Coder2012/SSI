@@ -15,6 +15,12 @@ const Construction = ({ data }) => (
   <Layout>
     <SEO title="SSI Security" />
     <Title style={LayoutStyles.title} />
+    <Img
+      className={LayoutStyles.fixedLogo}
+      fluid={
+        getImageByName(data, 'niceic-gas-safe-logo').node.childImageSharp.fluid
+      }
+    />
     <section className={LayoutStyles.section}>
       <h2>Property Management</h2>
       <Img

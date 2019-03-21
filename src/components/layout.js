@@ -28,6 +28,7 @@ const Layout = ({ background, children }) => (
               maxWidth: 1200,
               padding: `80px 1.0875rem 1.45rem`,
               paddingTop: 0,
+              position: `relative`
             }}
           >
             {children}
